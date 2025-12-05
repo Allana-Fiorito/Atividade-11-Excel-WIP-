@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%;
+}
+:root{
+    --azulTeste:     dodgerblue;
+    --vermelhoTeste: firebrick;
+    --verdeTeste:    green;
+    --laranjaTeste:  orange;
+    --amareloTeste:  yellow;
+    --roxoTeste:     violet;
+    --rosaTeste:     deeppink;
+    --botaoGrad: linear-gradient(to top, lime, green);
+    --botaoGradHover: linear-gradient(to top, #a0ff95, #2bff00);
+    --margemSessoes: 5% 15% 5% 15%;
+}
+
+.section1, .section3, .section4, .section5{
+    text-align: justify;
+    justify-content: center;
+}
+header, .section1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{/*🟦*/
+    width: 100%;
+    height: 10vh;
+    background-color: var(--azulTeste);
+}
+.section1{/*🔴*/
+    height: auto;
+    background-color: var(--vermelhoTeste);
+}
+.section1 p, .section3 p, .section4 p, .section5 p{
+    padding: var(--margemSessoes);
+}
+.capitular{
+    float: left;
+    line-height: 0.5;
+    font-size: 400%;
+}
+.txt1section1{
+    text-indent: 10px;
+}
+.txt2section1{
+    font-size: 100%;
+}
+video{
+    width: 70vw;
+}
+button{
+    background-image: var(--botaoGrad);
+    padding: 20px;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 0 5px 5px darkgreen;
+}
+button:hover{
+    background-image: var(--botaoGradHover);
+}
+a{
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.section2{/*🩷*/
+    background-color: var(--rosaTeste);
+}
+.section3{/*🟪*/
+    background-color: var(--roxoTeste);
+}
+.biografia{
+    /* flex-direction: row; */
+    text-align: none;
+}
+.section4{/*🟢*/
+    background-color: var(--verdeTeste);
+}
+.section5{/*🟡*/
+    background-color: var(--amareloTeste);
+}
+footer{/*🟧*/
+    background-color: var(--laranjaTeste);
+}
